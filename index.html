@@ -104,6 +104,42 @@
                     <div class="row" id="houses-cards"></div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Jobs</h1>
+                    <form class="d-flex" onsubmit='app.controllers.jobController.addJob(event)'>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" class="form-control" id="company" placeholder="Company" name="company">
+                            <button class="btn btn-success" type="submit">Create</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobTitle">jobTitle</label>
+                            <input type="text" class="form-control" id="jobTitle" placeholder="JobTitle"
+                                name="jobTitle">
+                        </div>
+                        <div class="form-group">
+                            <label for="hours">Hours</label>
+                            <input type="number" class="form-control" id="hours" placeholder="Hours" name="hours">
+                        </div>
+                        <div class="form-group">
+                            <label for="rate">Rate</label>
+                            <input type="number" class="form-control" id="rate" placeholder="rate" name="rate">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description" placeholder="Description"
+                                name="description">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-12">
+                    <h3>Available Jobs</h3>
+                    <hr>
+                    <div class="row" id="jobs-cards"></div>
+                </div>
+            </div>
         </main>
     </div>
 
