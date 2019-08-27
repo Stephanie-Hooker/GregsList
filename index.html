@@ -58,6 +58,52 @@
 
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Houses</h1>
+                    <form class="d-flex" onsubmit='app.controllers.houseController.addHouse(event)'>
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <input type="text" class="form-control" id="bedrooms" placeholder="Bedrooms"
+                                name="bedrooms">
+                            <button class="btn btn-success" type="submit">Create</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="bathrooms">Bathrooms</label>
+                            <input type="text" class="form-control" id="bathrooms" placeholder="Bathrooms"
+                                name="bathrooms">
+                        </div>
+                        <div class="form-group">
+                            <label for="imgUrl">Image Url</label>
+                            <input type="text" class="form-control" id="imgUrl" placeholder="Image Url..."
+                                name="imgUrl">
+                        </div>
+                        <div class="form-group">
+                            <label for="levels">Levels</label>
+                            <input type="number" class="form-control" id="levels" placeholder="Levels" name="levels">
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year</label>
+                            <input type="number" class="form-control" id="year" placeholder="Year" name="year">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="number" class="form-control" id="price" placeholder="Price" name="price">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description" placeholder="Description"
+                                name="description"></textarea>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-12">
+                    <h3>Available Houses</h3>
+                    <hr>
+                    <div class="row" id="houses-cards"></div>
+                </div>
+            </div>
         </main>
     </div>
 
