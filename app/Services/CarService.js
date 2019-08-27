@@ -1,5 +1,6 @@
 import Car from "../Models/Car.js";
 
+// @ts-ignore
 let _carApi = axios.create({
     baseURL: 'http://bcw-sandbox.herokuapp.com/api/cars'
 })

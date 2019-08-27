@@ -1,6 +1,7 @@
 import Job from "../Models/Job.js";
 
 //private
+// @ts-ignore
 let _JobApi = axios.create({
   baseURL: "http://bcw-sandbox.herokuapp.com/api/jobs"
 })
